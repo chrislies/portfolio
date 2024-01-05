@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --gray: rgb(156 163 175 / 0); /*gray400*/
+  --blue: #1e3a8a; /*blue900*/
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,4 +21,9 @@ body {
 
 .max-container {
   @apply mx-auto max-w-[1440px];
+}
+
+.angled-gradient {
+  /* @apply bg-gradient-to-b from-gray-400 to-blue-900; */
+  background: linear-gradient(220deg, var(--gray), var(--blue));
 }

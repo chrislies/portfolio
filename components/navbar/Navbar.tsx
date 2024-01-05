@@ -12,7 +12,7 @@ const NAV_LINKS = [
 const Navbar = () => {
   return (
     <header>
-      <div>
+      <div className="max-container">
         <ul className="hidden gap-16 lg:flex">
           {NAV_LINKS.map((link) => (
             <li key={link.key}>

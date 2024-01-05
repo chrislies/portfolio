@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-[url('/images/bg.svg')] bg-cover bg-no-repeat">
         <Navbar />
         <main className="">{children}</main>
         <Footer />

@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 :root {
+  --header-height: 85px;
   --gray: rgb(156 163 175 / 0); /*gray400*/
   --blue: #1e3a8a; /*blue900*/
 }
@@ -26,4 +27,20 @@ body {
 .angled-gradient {
   /* @apply bg-gradient-to-b from-gray-400 to-blue-900; */
   background: linear-gradient(220deg, var(--gray), var(--blue));
+}
+
+#navHeader {
+  @apply h-[var(--header-height)];
+}
+
+/* Hamburger memu bars */
+.bar {
+  @apply block w-[30px] h-[3px] my-[5px] mx-[auto] bg-black;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.container:hover .img {
+  @apply p-[15px];
 }

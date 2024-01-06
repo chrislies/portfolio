@@ -7,7 +7,7 @@ import TechStack from "./TechStack";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col gap-40">
+    <section className="flex flex-col">
       <Hello />
       <TechStack />
       <FeaturedProjects />

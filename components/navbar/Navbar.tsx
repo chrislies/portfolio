@@ -3,13 +3,7 @@ import React, { useEffect, useState } from "react";
 import Navlink from "./Navlink";
 import Link from "next/link";
 import Initials from "../Initials";
-
-const NAV_LINKS = [
-  { href: "/", key: "home", label: "Home" },
-  { href: "/projects", key: "projects", label: "Projects" },
-  { href: "/experience", key: "experience", label: "Experience" },
-  { href: "/contact", key: "contact", label: "Contact" },
-];
+import { NAV_LINKS } from "@/constants";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

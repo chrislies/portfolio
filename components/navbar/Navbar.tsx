@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Navlink from "./Navlink";
 import Link from "next/link";
+import Initials from "../Initials";
 
 const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
@@ -37,23 +38,28 @@ const Navbar = () => {
     <div className="sticky top-0 z-50">
       <div
         id="navHeader"
-        className={`sticky top-0 z-40 bg-white ${
+        className={`sticky top-0 z-40 bg-transparent backdrop-blur-sm ${
           isMenuOpen ? "shadow-md" : "shadow-3xl"
         } transition-all duration-[900ms]`}
       >
-        <nav className="flexBetween h-[--header-height] max-container padding-container py-1 max-w-full">
+        <nav className="flex justify-between items-center h-[--header-height] max-container py-1 max-w-full">
+          <Initials />
           <ul className="hidden gap-16 lg:flex">
             {NAV_LINKS.map((link) => (
               <li key={link.key}>
                 <Navlink
                   href={link.href}
-                  className={`text-base font-semibold text-grey-50 flexCenter cursor-pointer border-y-2 border-transparent hover:border-b-yellow-600/60 transition-all duration-300 ease-in-out`}
-                  activeClasses="border-b-yellow-600/70"
+                  className={`navlink-container text-base font-semibold text-white flex justify-center items-center cursor-pointer`}
+                  activeClasses="navlink-active"
                   label={link.label}
                 />
               </li>
             ))}
           </ul>
+          <div className="text-white flex gap-5">
+            <p>LinkedIn</p>
+            <p>GitHub</p>
+          </div>
           <div
             id="menu-button"
             onClick={toggleMenu}

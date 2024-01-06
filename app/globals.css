@@ -8,6 +8,7 @@
   --header-height: 85px;
   --gray: rgb(156 163 175 / 0); /*gray400*/
   --blue: #1e3a8a; /*blue900*/
+  --dark-blue: #1e1c8f;
 }
 
 * {
@@ -33,9 +34,32 @@ body {
   @apply h-[var(--header-height)];
 }
 
+.navlink-container {
+  @apply relative inline-block;
+}
+
+.navlink-container::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: var(--dark-blue);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.navlink-container:hover::after {
+  width: 100%;
+  left: 0;
+}
+.navlink-active {
+  @apply underline decoration-[var(--dark-blue)] decoration-2 underline-offset-[6px];
+}
+
 /* Hamburger memu bars */
 .bar {
-  @apply block w-[30px] h-[3px] my-[5px] mx-[auto] bg-black;
+  @apply block w-[30px] h-[3px] my-[5px] mx-[auto] bg-white;
 }
 
 .container:hover .overlay {
@@ -43,4 +67,10 @@ body {
 }
 .container:hover .img {
   @apply p-[15px];
+}
+
+.initials {
+  @apply select-none cursor-pointer skew-x-[-5deg] text-blue-50 font-bold text-4xl tracking-wide bg-clip-text bg-gradient-to-t from-[#7373f3] to-[#1316e4];
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: calc(1em / 16);
 }

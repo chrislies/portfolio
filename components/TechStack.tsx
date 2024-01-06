@@ -2,14 +2,14 @@ import Image from "next/image";
 import React from "react";
 import SectionHeader from "./SectionHeader";
 
-const About = () => {
+const TechStack = () => {
   return (
     <section className="max-container">
       <div className="">
-        <SectionHeader title="About"></SectionHeader>
+        <p>My Tech Stack</p>
       </div>
     </section>
   );
 };
 
-export default About;
+export default TechStack;

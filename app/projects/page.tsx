@@ -1,7 +1,8 @@
+import Projects from "@/components/Projects";
 import React from "react";
 
 const projects = () => {
-  return <div>projects</div>;
+  return <Projects />;
 };
 
 export default projects;

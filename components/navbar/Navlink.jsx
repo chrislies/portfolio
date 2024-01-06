@@ -7,6 +7,7 @@ const Navlink = ({ href, label, activeClasses, className }) => {
   const isActive = path === href;
   return (
     <Link
+      id="navlink"
       className={`${isActive ? activeClasses : ""} ${className}`}
       href={href}
     >

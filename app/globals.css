@@ -46,7 +46,7 @@ body {
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: -2px;
+  bottom: -1.75px;
   left: 50%;
   background-color: var(--dark-blue);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;

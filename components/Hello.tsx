@@ -23,8 +23,8 @@ const Hello = () => {
               I like to build things for the web.
             </h2>
             <p className="text-base text-slate-300 max-w-[500px] leading-6 tracking-wide">
-              I'm an aspiring full-stack developer fueled by relentless passion
-              and endless curiosity.
+              {`I'm an aspiring full-stack developer fueled by relentless passion
+              and endless curiosity.`}
             </p>
           </div>
         </div>

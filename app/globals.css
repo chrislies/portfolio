@@ -26,6 +26,10 @@ body {
   font-family: Inter;
 }
 
+.padding-container {
+  @apply px-6 lg:px-20;
+}
+
 .max-container {
   @apply mx-auto max-w-[1440px];
 }
@@ -104,17 +108,19 @@ body {
 .profileImageContainer #headshot,
 .profileImageContainer::before,
 .profileImageContainer::after {
-  transition: all .3s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 .profileImageContainer:hover::before {
-  bottom: 5px;
-  left: -5px;
+  /* bottom: 5px;
+  left: -5px; */
+  bottom: 3px;
+  left: -7px;
 }
 
 .profileImageContainer:hover::after {
-  bottom: -18px;
-  left: 15px;
+  bottom: -20px;
+  left: 13px;
 }
 
 .profileImageContainer::before {

@@ -13,7 +13,7 @@ const Hello = () => {
             alt="Christopher"
             height={400}
             width={400}
-            className="group-hover:-translate-y-[5px] group-hover:-translate-x-[5px]"
+            className="group-hover:-translate-y-[3px] group-hover:-translate-x-[7px]"
           ></Image>
         </div>
         <div className="flex flex-col items-start">

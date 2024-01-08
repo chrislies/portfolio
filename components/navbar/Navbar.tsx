@@ -36,7 +36,7 @@ const Navbar = () => {
           isMenuOpen ? "shadow-md" : "shadow-3xl"
         } transition-all duration-[900ms]`}
       >
-        <nav className="flex justify-between items-center h-[--header-height] max-container py-1 max-w-full">
+        <nav className="flex justify-between items-center h-[--header-height] max-container padding-container py-1 max-w-full">
           <Initials />
           <ul className="hidden gap-16 lg:flex">
             {NAV_LINKS.map((link) => (
@@ -50,7 +50,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className="text-white flex gap-5">
+          <div className="hidden text-white lg:flex gap-5">
             <p>LinkedIn</p>
             <p>GitHub</p>
           </div>

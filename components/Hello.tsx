@@ -5,17 +5,16 @@ import Nametag from "./Nametag";
 const Hello = () => {
   return (
     <section className="max-container min-h-screen bg-blue-500d flex flex-col justify-center pb-[var(--header-height)] pb-[300px]">
-      <div className="flex gap-5 justify-center items-center">
-        <div className="relative select-none">
+      <div className="flex gap-10 justify-center items-center">
+        <div className="profileImageContainer relative group">
           <Image
+            id="headshot"
             src={"/images/chris.png"}
             alt="Christopher"
             height={400}
             width={400}
-            className="select-none z-50"
+            className="group-hover:-translate-y-[5px] group-hover:-translate-x-[5px]"
           ></Image>
-          <div className="h-[330px] w-[320px] z-[-1] absolute top-[70px] left-10 top-0d left-0d rounded-lg bg-gray-900"></div>
-          <div className="h-[330px] w-[320px] z-[-2] absolute top-[82px] left-[48px] angled-gradient rounded-lg opacity-[.8]"></div>
         </div>
         <div className="flex flex-col items-start">
           <Nametag className="rotate-[-3deg] scale-[.85]"></Nametag>

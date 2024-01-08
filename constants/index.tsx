@@ -37,34 +37,7 @@ export const TECH = [
   {
     label: "CSS",
     svg: (
-      <svg
-        height="64px"
-        width="64px"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-label="CSS3"
-        role="img"
-        viewBox="0 0 512 512"
-        fill="#000000"
-      >
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g
-          id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></g>
-        <g id="SVGRepo_iconCarrier">
-          <path fill="#264de4" d="M72 460L30 0h451l-41 460-184 52"></path>
-          <path fill="#2965f1" d="M256 37V472l149-41 35-394"></path>
-          <path
-            fill="#ebebeb"
-            d="m114 94h142v56H119m5 58h132v57H129m3 28h56l4 45 64 17v59L139 382"
-          ></path>
-          <path
-            fill="#ffffff"
-            d="m256 208v57h69l-7 73-62 17v59l115-32 26-288H256v56h80l-5.5 58Z"
-          ></path>
-        </g>
-      </svg>
+      <svg width="64px" height="64px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_css</title><polygon points="5.902 27.201 3.656 2 28.344 2 26.095 27.197 15.985 30 5.902 27.201" fill="#1572b6"></polygon><polygon points="16 27.858 24.17 25.593 26.092 4.061 16 4.061 16 27.858" fill="#33a9dc"></polygon><polygon points="16 13.191 20.09 13.191 20.372 10.026 16 10.026 16 6.935 16.011 6.935 23.75 6.935 23.676 7.764 22.917 16.282 16 16.282 16 13.191" fill="#fff"></polygon><polygon points="16.019 21.218 16.005 21.222 12.563 20.292 12.343 17.827 10.67 17.827 9.24 17.827 9.673 22.68 16.004 24.438 16.019 24.434 16.019 21.218" fill="#ebebeb"></polygon><polygon points="19.827 16.151 19.455 20.29 16.008 21.22 16.008 24.436 22.344 22.68 22.391 22.158 22.928 16.151 19.827 16.151" fill="#fff"></polygon><polygon points="16.011 6.935 16.011 8.855 16.011 10.018 16.011 10.026 8.555 10.026 8.555 10.026 8.545 10.026 8.483 9.331 8.342 7.764 8.268 6.935 16.011 6.935" fill="#ebebeb"></polygon><polygon points="16 13.191 16 15.111 16 16.274 16 16.282 12.611 16.282 12.611 16.282 12.601 16.282 12.539 15.587 12.399 14.02 12.325 13.191 16 13.191" fill="#ebebeb"></polygon></g></svg> 
     ),
   },
   {
